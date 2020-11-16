@@ -176,7 +176,7 @@ export default {
   }
   .icolor{
     color: #409EFF;
-  }
+  } 
   .btn{
     width: 140px;
   }
