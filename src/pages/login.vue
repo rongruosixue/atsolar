@@ -57,7 +57,6 @@
 
 <script>
 
-
 export default {
   name: 'login',
   data() {
@@ -98,7 +97,10 @@ export default {
         let data = response.data;
         if (data.code === 0) {
           this.$message.success(this.$t('login.logok'));
+          sessionStorage.setItem('login','true');
           this.$router.push('/HelloWorld');
+          localStorage.setItem('atusername',this.form.username);
+          localStorage.setItem('atpassword',this.form.password);
         } else {
           this.$message.error(this.$t('login.logerror'));
         }
@@ -176,7 +178,7 @@ export default {
   }
   .icolor{
     color: #409EFF;
-  } 
+  }
   .btn{
     width: 140px;
   }

@@ -23,5 +23,22 @@ module.exports = {
     regerror:'the username is already exists, try another one！',
     logok:'login success！',
     logerror:'username or password is wrong!',
+  },
+  header:{
+    screen:'Screen',
+    me:'Profile',
+    exit:'Exit'
+  },
+  leftnav:{
+    account:'User account',
+    station:'PowerStation',
+    normal:'Normal',
+    standby:'Standby',
+    fault:'Fault',
+    warn:'Warn',
+    offline:'Offline',
+    building:'Under-construction',
+    inverter:'Inverter',
+    collector:'Collector'
   }
 }

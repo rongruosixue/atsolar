@@ -23,5 +23,22 @@ module.exports = {
     regerror:'用户名已存在，请修改！',
     logok:'登陆成功！',
     logerror:'用户名或密码错误!',
+  },
+  header:{
+    screen:'大屏',
+    me:'个人中心',
+    exit:'退出'
+  },
+  leftnav:{
+    account:'我的用户',
+    station:'我的电站',
+    normal:'正常',
+    standby:'待机',
+    fault:'故障',
+    warn:'告警',
+    offline:'离线',
+    building:'建设中',
+    inverter:'我的逆变器',
+    collector:'我的采集器'
   }
 }
