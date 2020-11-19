@@ -40,5 +40,18 @@ module.exports = {
     building:'Under-construction',
     inverter:'Inverter',
     collector:'Collector'
+  },
+  mecenter:{
+    username:'username',
+    password:'password',
+    phone:   'phone',
+    email:   'email',
+    remark1: 'remark',
+    recordtime:'record time',
+    success:'update success!',
+    error:'update error!'
+  },
+  endUser:{
+    title:'My end-user',
   }
 }

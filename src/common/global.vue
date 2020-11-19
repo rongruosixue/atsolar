@@ -3,10 +3,10 @@
 </template>
 
 <script>
-let islogin = false;
+var user=null;
 export default {
 name: "global",
-  islogin,
+  user,
 }
 </script>
 

@@ -97,7 +97,18 @@ export default {
         let data = response.data;
         if (data.code === 0) {
           this.$message.success(this.$t('login.logok'));
+          this.$root.user = data.data;
+          sessionStorage.setItem('user',JSON.stringify(data.data));
           sessionStorage.setItem('login','true');
+          let remark6 = this.$root.user.remark6;
+          if (remark6==null || remark6=="administrator"){
+            this.$setItem('operate','true',function (result) {
+            })
+          } else {
+            this.$setItem('operate','false',function (result) {
+            })
+          }
+
           this.$router.push('/HelloWorld');
           localStorage.setItem('atusername',this.form.username);
           localStorage.setItem('atpassword',this.form.password);
@@ -138,7 +149,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style scoped>

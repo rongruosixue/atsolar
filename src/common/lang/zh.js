@@ -40,5 +40,18 @@ module.exports = {
     building:'建设中',
     inverter:'我的逆变器',
     collector:'我的采集器'
+  },
+  mecenter:{
+    username:'用户名',
+    password:'密  码',
+    phone:   '电  话',
+    email:   '邮  箱',
+    remark1: '备注名',
+    recordtime:'创建时间',
+    success:'更新成功!',
+    error:'更新失败!'
+  },
+  endUser:{
+    title:'我的农户账号',
   }
 }

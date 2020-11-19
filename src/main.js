@@ -9,7 +9,11 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VueI18n from 'vue-i18n'
 import locale from 'element-ui/lib/locale'
+import global from './common/global'
+import VueLocalForage from 'vue-localforage'
 
+Vue.prototype.global = global;
+Vue.use(VueLocalForage)
 Vue.use(VueI18n)
 
 const i18n = new VueI18n({
@@ -33,6 +37,11 @@ new Vue({
   router,i18n,
   components: { App, i18n, ElementUI },
   template: '<App/>',
+  data(){
+    return{
+      user:null,
+    }
+  },
   mounted () {
       axios.defaults.baseURL = 'http://localhost:8082/';
       var lang = window.navigator.language||window.navigator.userLanguage;//常规浏览器语言和IE浏览器
@@ -42,6 +51,5 @@ new Vue({
       } else {
         i18n.locale = 'zh';
       }
-
   }
 })
